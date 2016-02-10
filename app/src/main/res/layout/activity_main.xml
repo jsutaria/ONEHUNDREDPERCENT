@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linear"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="0dp"
+    android:orientation="vertical"
+    tools:context="onehundred.onehundredpercent.MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"/>
+
+    <ImageView
+        android:id="@+id/completion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Payment Information"
+            android:onClick="OpenPaymentSettings"/>
+
+        <Button
+            android:id="@+id/Settings"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Weekly Goals"
+            android:onClick="OpenSettings"/>
+    </LinearLayout>
+
+    <Button android:id="@+id/togglerunning"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Running"
+        android:onClick="ToggleTracking"/>
+
+</LinearLayout>
